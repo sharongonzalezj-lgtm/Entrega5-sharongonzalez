@@ -1,0 +1,697 @@
+/* =========================================================
+   VELVET BEAUTY
+   STYLES3.CSS
+   Página: Contacto
+   Diseño femenino - rosa - elegante
+========================================================= */
+
+
+/* =========================================================
+   1. RESET GENERAL
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #ffffff;
+
+    color: #542f3b;
+
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   2. HEADER
+========================================================= */
+
+header {
+    width: 100%;
+    min-height: 90px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 15px 4%;
+
+    background-color: #ffffff;
+
+    border-bottom: 1px solid #f0d9df;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+/* =========================================================
+   3. LOGO
+========================================================= */
+
+.logo {
+    flex-shrink: 0;
+}
+
+.logo a {
+    display: block;
+}
+
+.logo h1 {
+    color: #542f3b;
+
+    font-size: 24px;
+
+    font-weight: 500;
+
+    letter-spacing: 3px;
+
+    white-space: nowrap;
+
+    transition: color 0.3s ease;
+}
+
+.logo h1:hover {
+    color: #c45d78;
+}
+
+
+/* =========================================================
+   4. MENÚ
+========================================================= */
+
+header nav {
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+
+    list-style: none;
+}
+
+header nav li {
+    list-style: none;
+}
+
+header nav a {
+    color: #633f4a;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 0.7px;
+
+    text-transform: uppercase;
+
+    white-space: nowrap;
+
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #c45d78;
+}
+
+
+/* =========================================================
+   5. BUSCADOR
+========================================================= */
+
+.buscador {
+    width: 210px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    border: 1px solid #e5c4cd;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    background-color: #ffffff;
+
+    flex-shrink: 0;
+}
+
+.buscador input {
+    width: 100%;
+    height: 100%;
+
+    padding: 0 14px;
+
+    border: none;
+
+    outline: none;
+
+    color: #633f4a;
+
+    font-size: 13px;
+}
+
+.buscador input::placeholder {
+    color: #a98a94;
+}
+
+.buscador button {
+    width: 45px;
+    height: 100%;
+
+    border: none;
+
+    background-color: #ffffff;
+
+    color: #633f4a;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+.buscador button:hover {
+    background-color: #fff0f4;
+}
+
+
+/* =========================================================
+   6. ICONOS
+========================================================= */
+
+.iconos {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    flex-shrink: 0;
+}
+
+.iconos a,
+.iconos span {
+    font-size: 20px;
+
+    color: #633f4a;
+
+    cursor: pointer;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.iconos a:hover,
+.iconos span:hover {
+    color: #c45d78;
+
+    transform: scale(1.15);
+}
+
+
+/* =========================================================
+   7. CONTENIDO PRINCIPAL
+========================================================= */
+
+main {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 60px auto;
+
+    padding: 0 25px;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 40px;
+}
+
+
+/* =========================================================
+   8. TARJETAS
+========================================================= */
+
+main section {
+    padding: 35px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #f1d8e1;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(180, 80, 120, 0.10);
+}
+
+
+/* =========================================================
+   9. TÍTULOS
+========================================================= */
+
+main section h2 {
+    margin-bottom: 12px;
+
+    color: #c85c82;
+
+    font-size: 28px;
+
+    font-weight: 500;
+
+    letter-spacing: 1px;
+}
+
+main section h3 {
+    margin-top: 25px;
+
+    margin-bottom: 10px;
+
+    color: #c85c82;
+
+    font-size: 18px;
+}
+
+main section p {
+    margin-bottom: 10px;
+
+    color: #666666;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   10. FORMULARIO
+========================================================= */
+
+.contacto-form form {
+    margin-top: 25px;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* =========================================================
+   11. LABEL
+========================================================= */
+
+.contacto-form label {
+    margin-bottom: 6px;
+
+    color: #555555;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   12. CAMPOS
+========================================================= */
+
+.contacto-form input,
+.contacto-form select,
+.contacto-form textarea {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #e4bdca;
+
+    border-radius: 8px;
+
+    background-color: #fffafa;
+
+    color: #333333;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* =========================================================
+   13. FOCUS
+========================================================= */
+
+.contacto-form input:focus,
+.contacto-form select:focus,
+.contacto-form textarea:focus {
+    border-color: #d96c91;
+
+    box-shadow:
+        0 0 0 3px rgba(217, 108, 145, 0.12);
+}
+
+
+/* =========================================================
+   14. TEXTAREA
+========================================================= */
+
+.contacto-form textarea {
+    min-height: 150px;
+
+    resize: vertical;
+}
+
+
+/* =========================================================
+   15. BOTÓN
+========================================================= */
+
+.contacto-form button[type="submit"] {
+    width: 170px;
+
+    padding: 13px 20px;
+
+    margin-top: 5px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background-color: #d96c91;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.contacto-form button[type="submit"]:hover {
+    background-color: #b94f76;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   16. INFORMACIÓN DE CONTACTO
+========================================================= */
+
+.informacion-contacto {
+    align-self: start;
+
+    background-color: #fff0f5;
+}
+
+.informacion-contacto h2 {
+    font-size: 24px;
+}
+
+.informacion-contacto h3 {
+    margin-top: 25px;
+}
+
+.informacion-contacto p {
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   17. EMAIL
+========================================================= */
+
+.informacion-contacto p:last-child {
+    color: #c85c82;
+
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   18. FOOTER
+========================================================= */
+
+.footer-container {
+    padding: 60px 5% 25px;
+
+    background-color: #542f3b;
+
+    color: #ffffff;
+}
+
+.footer-content {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 50px;
+}
+
+.footer-column h3 {
+    margin-bottom: 20px;
+
+    font-size: 17px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #f9dfe6;
+
+    font-size: 14px;
+
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #ffffff;
+}
+
+
+
+
+/* =========================================================
+   19. FOOTER INFERIOR
+========================================================= */
+
+.footer-bottom {
+    max-width: 1200px;
+
+    margin: 40px auto 0;
+
+    padding-top: 25px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+    text-align: center;
+
+    color: #f9dfe6;
+
+    font-size: 13px;
+}
+
+.footer-bottom p {
+    margin-bottom: 5px;
+}
+
+
+/* =========================================================
+   20. TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    header {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    header nav {
+        order: 3;
+
+        width: 100%;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+.footer-container {
+    padding: 60px 5% 25px;
+
+    background-color: #542f3b;
+
+    color: #ffffff;
+}
+
+.footer-content {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 50px;
+}
+
+.footer-column h3 {
+    margin-bottom: 20px;
+
+    color: #ffffff;
+
+    font-size: 17px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #f9dfe6;
+
+    font-size: 14px;
+
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #ffffff;
+}
+        max-width: 800px;
+    }
+
+    .informacion-contacto {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   21. CELULAR
+========================================================= */
+
+@media (max-width: 650px) {
+
+    header {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 20px;
+    }
+
+    header nav {
+        order: initial;
+
+        width: 100%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .buscador {
+        width: 100%;
+
+        max-width: 300px;
+    }
+
+    main {
+        margin: 30px auto;
+
+        padding: 0 15px;
+
+        gap: 25px;
+    }
+
+    main section {
+        padding: 25px 20px;
+    }
+
+    main section h2 {
+        font-size: 23px;
+    }
+
+    .contacto-form button[type="submit"] {
+        width: 100%;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        gap: 35px;
+    }
+
+}

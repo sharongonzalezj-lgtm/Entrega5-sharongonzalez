@@ -1,0 +1,858 @@
+/* =========================================================
+   VELVET BEAUTY
+   STYLES5.CSS
+   PÁGINA: FRAGANCIAS
+========================================================= */
+
+
+/* =========================================================
+   1. RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff8fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   2. HEADER
+========================================================= */
+
+header {
+    width: 100%;
+    min-height: 100px;
+
+    padding: 18px 45px;
+
+    background-color: #ffffff;
+
+    border-bottom: 1px solid #ead5de;
+
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   3. LOGO
+========================================================= */
+
+.logo {
+    flex-shrink: 0;
+}
+
+.logo h1 {
+    color: #542f3b;
+
+    font-size: 24px;
+
+    font-weight: 500;
+
+    letter-spacing: 3px;
+
+    white-space: nowrap;
+}
+
+.logo h1:hover {
+    color: #c45d78;
+}
+
+
+/* =========================================================
+   4. BUSCADOR
+========================================================= */
+
+header > form {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+header input[type="search"] {
+    width: 220px;
+    height: 40px;
+
+    padding: 0 15px;
+
+    border: 1px solid #dfb9c7;
+
+    border-radius: 25px;
+
+    background-color: #ffffff;
+
+    outline: none;
+
+    font-size: 14px;
+}
+
+header input[type="search"]:focus {
+    border-color: #c95f84;
+
+    box-shadow: 0 0 0 3px rgba(201, 95, 132, 0.12);
+}
+
+
+/* =========================================================
+   5. BOTÓN BUSCAR
+========================================================= */
+
+header form button {
+    height: 40px;
+
+    padding: 0 18px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background-color: #c95f84;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+header form button:hover {
+    background-color: #a94568;
+}
+
+
+/* =========================================================
+   6. MENÚ
+========================================================= */
+
+nav {
+    margin-left: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #444;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    white-space: nowrap;
+
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #c95f84;
+}
+
+
+/* =========================================================
+   7. CONTENIDO PRINCIPAL
+========================================================= */
+
+main {
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 50px auto;
+
+    padding: 0 25px;
+}
+
+
+/* =========================================================
+   8. TÍTULO PRINCIPAL
+========================================================= */
+
+main > h1 {
+    text-align: center;
+
+    color: #c95f84;
+
+    font-size: 36px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================================
+   9. CATEGORÍAS
+========================================================= */
+
+.categorias {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-bottom: 40px;
+
+    flex-wrap: wrap;
+}
+
+
+/*
+   El título Categorías ocupa toda la fila
+*/
+
+.categorias h2 {
+    width: 100%;
+
+    text-align: center;
+
+    color: #555;
+
+    font-size: 20px;
+
+    margin-bottom: 5px;
+}
+
+
+.categorias button {
+    padding: 11px 25px;
+
+    background-color: #ffffff;
+
+    color: #b65377;
+
+    border: 1px solid #d9aabb;
+
+    border-radius: 25px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.categorias button:hover {
+    background-color: #c95f84;
+
+    color: #ffffff;
+
+    border-color: #c95f84;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   10. BANNER
+========================================================= */
+
+.banner {
+    width: 100%;
+
+    margin-bottom: 50px;
+}
+
+.banner figure {
+    width: 100%;
+
+    margin: 0;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 25px rgba(170, 70, 100, 0.12);
+}
+
+.banner a {
+    display: block;
+
+    text-decoration: none;
+}
+
+.banner img {
+    width: 100%;
+
+    height: 320px;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.banner img:hover {
+    transform: scale(1.03);
+}
+
+
+/* =========================================================
+   11. CONTENEDOR DE PRODUCTOS
+========================================================= */
+
+.productos {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   12. TÍTULO "FRAGANCIAS DESTACADAS"
+========================================================= */
+
+
+/*
+   ESTE ES EL CAMBIO MÁS IMPORTANTE.
+
+   El h2 NO será considerado como producto.
+
+   Va a ocupar las 3 columnas completas.
+*/
+
+.productos > h2 {
+    grid-column: 1 / -1;
+
+    width: 100%;
+
+    text-align: center;
+
+    color: #555;
+
+    font-size: 26px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================================================
+   13. TARJETAS DE PRODUCTOS
+========================================================= */
+
+.producto {
+    background-color: #ffffff;
+
+    border: 1px solid #ead5de;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 18px rgba(170, 70, 100, 0.08);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 12px 28px rgba(170, 70, 100, 0.16);
+}
+
+
+/* =========================================================
+   14. IMÁGENES
+========================================================= */
+
+.producto > a:first-child {
+    display: block;
+
+    width: 100%;
+
+    text-decoration: none;
+}
+
+.producto img {
+    width: 100%;
+
+    height: 270px;
+
+    object-fit: contain;
+
+    display: block;
+
+    margin: 0 auto 18px;
+
+    transition: transform 0.3s ease;
+}
+
+.producto:hover img {
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   15. NOMBRE
+========================================================= */
+
+.producto h3 {
+    width: 100%;
+
+    min-height: 55px;
+
+    margin-bottom: 10px;
+
+    color: #444;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   16. PRECIOS
+========================================================= */
+
+.producto p {
+    width: 100%;
+
+    margin-bottom: 3px;
+}
+
+.producto del {
+    color: #999;
+
+    font-size: 14px;
+}
+
+.producto strong {
+    color: #c95f84;
+
+    font-size: 21px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   17. BOTÓN COMPRAR
+========================================================= */
+
+
+/*
+   El botón ahora es un <a>.
+   Por eso NO usamos .producto button.
+*/
+
+.producto .boton-comprar {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 150px;
+
+    min-height: 44px;
+
+    margin-top: auto;
+
+    padding: 11px 25px;
+
+    background-color: #c95f84;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border: none;
+
+    border-radius: 25px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.producto .boton-comprar:hover {
+    background-color: #a94568;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 12px rgba(169, 69, 104, 0.25);
+}
+
+
+/* =========================================================
+   18. FOOTER
+========================================================= */
+
+footer {
+    width: 100%;
+
+    margin-top: 60px;
+
+    padding: 30px 20px;
+
+    background-color: #ffffff;
+
+    border-top: 1px solid #ead5de;
+
+    text-align: center;
+}
+
+footer h2 {
+    color: #c95f84;
+
+    font-size: 22px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 8px;
+}
+
+footer p {
+    color: #777;
+
+    font-size: 14px;
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================================================
+   19. TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    header {
+        justify-content: center;
+    }
+
+    nav {
+        width: 100%;
+
+        margin-left: 0;
+    }
+
+    .productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================================================
+   20. CELULAR
+========================================================= */
+
+@media (max-width: 650px) {
+
+    header {
+        flex-direction: column;
+
+        gap: 18px;
+
+        padding: 20px;
+    }
+
+    .logo figure {
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+    .logo img {
+        width: 60px;
+
+        height: 60px;
+    }
+
+    .logo figcaption {
+        font-size: 18px;
+    }
+
+    header > form {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    header input[type="search"] {
+        width: 65%;
+    }
+
+    nav {
+        width: 100%;
+
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    main {
+        margin: 35px auto;
+
+        padding: 0 15px;
+    }
+
+    main > h1 {
+        font-size: 28px;
+    }
+
+    .categorias {
+        gap: 8px;
+    }
+
+    .categorias h2 {
+        font-size: 18px;
+    }
+
+    .categorias button {
+        padding: 9px 17px;
+    }
+
+    .banner img {
+        height: 220px;
+    }
+
+    .productos {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+    .productos > h2 {
+        font-size: 23px;
+    }
+
+    .producto img {
+        height: 250px;
+    }
+
+    .producto h3 {
+        min-height: auto;
+    }
+
+    .producto .boton-comprar {
+        width: 100%;
+
+        max-width: 220px;
+    }
+}
+/* =========================================================
+   21. FOOTER
+========================================================= */
+
+.footer-container {
+    padding: 60px 5% 25px;
+
+    background-color: #542f3b;
+
+    color: #ffffff;
+}
+
+.footer-content {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 50px;
+}
+
+.footer-column h3 {
+    margin-bottom: 20px;
+
+    font-size: 17px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #f9dfe6;
+
+    font-size: 14px;
+
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   22. FOOTER INFERIOR
+========================================================= */
+
+.footer-bottom {
+    max-width: 1200px;
+
+    margin: 40px auto 0;
+
+    padding-top: 25px;
+
+    border-top: 1px solid rgba(255,255,255,0.2);
+
+    text-align: center;
+
+    color: #f9dfe6;
+
+    font-size: 13px;
+}
+
+.footer-bottom p {
+    margin-bottom: 5px;
+}
+
+
+/* =========================================================
+   23. TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    header {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    header nav {
+        order: 3;
+
+        width: 100%;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .categorias .galeria,
+    .fragancias .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .footer-content {
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 30px;
+    }
+
+}
+
+
+/* =========================================================
+   CELULAR
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .footer-container {
+        padding: 45px 25px 25px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        text-align: center;
+    }
+
+    .footer-bottom {
+        margin-top: 35px;
+
+        font-size: 12px;
+    }
+
+}

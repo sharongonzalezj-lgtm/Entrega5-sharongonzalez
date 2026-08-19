@@ -1,0 +1,671 @@
+/* =========================================================
+   VELVET BEAUTY
+   STYLES3.CSS
+   Página: Mi Cuenta
+   Diseño femenino - rosa - elegante
+========================================================= */
+
+
+/* =========================================================
+   1. RESET GENERAL
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #542f3b;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   2. HEADER
+========================================================= */
+
+header {
+    width: 100%;
+    min-height: 90px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 15px 4%;
+
+    background-color: #ffffff;
+
+    border-bottom: 1px solid #f0d9df;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+/* =========================================================
+   3. LOGO
+========================================================= */
+
+.logo {
+    flex-shrink: 0;
+}
+
+.logo a {
+    display: block;
+}
+
+.logo h1 {
+    color: #542f3b;
+
+    font-size: 24px;
+    font-weight: 500;
+
+    letter-spacing: 3px;
+
+    white-space: nowrap;
+
+    transition: color 0.3s ease;
+}
+
+.logo h1:hover {
+    color: #c45d78;
+}
+
+
+/* =========================================================
+   4. MENÚ
+========================================================= */
+
+header nav {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 28px;
+
+    list-style: none;
+}
+
+header nav li {
+    list-style: none;
+}
+
+header nav a {
+    color: #633f4a;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 0.7px;
+
+    text-transform: uppercase;
+
+    white-space: nowrap;
+
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #c45d78;
+}
+
+
+/* =========================================================
+   5. BUSCADOR
+========================================================= */
+
+.buscador {
+    width: 210px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px solid #e5c4cd;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    background-color: #ffffff;
+
+    flex-shrink: 0;
+}
+
+.buscador input {
+    width: 100%;
+    height: 100%;
+
+    padding: 0 14px;
+
+    border: none;
+    outline: none;
+
+    color: #633f4a;
+
+    font-size: 13px;
+}
+
+.buscador input::placeholder {
+    color: #a98a94;
+}
+
+.buscador button {
+    width: 45px;
+    height: 100%;
+
+    border: none;
+
+    background-color: #ffffff;
+
+    color: #633f4a;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    transition: background-color 0.3s ease;
+}
+
+.buscador button:hover {
+    background-color: #fff0f4;
+}
+
+
+/* =========================================================
+   6. ICONOS
+========================================================= */
+
+.iconos {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    flex-shrink: 0;
+}
+
+.iconos a {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+
+    color: #633f4a;
+
+    font-size: 20px;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.iconos a:hover {
+    color: #c45d78;
+
+    transform: scale(1.15);
+}
+
+
+/* =========================================================
+   7. CONTENIDO PRINCIPAL
+========================================================= */
+
+main {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 60px auto;
+
+    padding: 0 25px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 35px;
+}
+
+
+/* =========================================================
+   8. TARJETAS DE CUENTA
+========================================================= */
+
+.cuenta,
+.crear-cuenta {
+    padding: 40px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #f1d8e1;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 8px 25px rgba(130, 60, 80, 0.08);
+}
+
+
+/* =========================================================
+   9. TÍTULOS
+========================================================= */
+
+.cuenta h2,
+.crear-cuenta h2 {
+    margin-bottom: 12px;
+
+    color: #542f3b;
+
+    font-size: 27px;
+
+    font-weight: 400;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   10. TEXTOS
+========================================================= */
+
+.cuenta > p,
+.crear-cuenta > p {
+    margin-bottom: 15px;
+
+    color: #856a73;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   11. FORMULARIO
+========================================================= */
+
+.cuenta form {
+    width: 100%;
+
+    margin-top: 25px;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.cuenta form > div {
+    width: 100%;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   12. ETIQUETAS
+========================================================= */
+
+.cuenta label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #633f4a;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   13. CAMPOS
+========================================================= */
+
+.cuenta input {
+    width: 100%;
+    height: 45px;
+
+    padding: 0 14px;
+
+    border: 1px solid #e4bdca;
+
+    border-radius: 7px;
+
+    background-color: #fffafa;
+
+    color: #333333;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.cuenta input:focus {
+    border-color: #c45d78;
+
+    box-shadow:
+        0 0 0 3px rgba(196, 93, 120, 0.12);
+}
+
+
+/* =========================================================
+   14. RECUPERAR CONTRASEÑA
+========================================================= */
+
+.cuenta form a {
+    color: #c45d78;
+
+    font-size: 13px;
+
+    transition: color 0.3s ease;
+}
+
+.cuenta form a:hover {
+    color: #a94762;
+
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   15. BOTÓN INICIAR SESIÓN
+========================================================= */
+
+.cuenta button {
+    padding: 13px 25px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background-color: #c45d78;
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 0.8px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.cuenta button:hover {
+    background-color: #a94762;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   16. CREAR CUENTA
+========================================================= */
+
+.crear-cuenta {
+    background-color: #fff2f6;
+}
+
+.crear-cuenta p {
+    color: #856a73;
+}
+
+
+/* =========================================================
+   17. BOTÓN CREAR CUENTA
+========================================================= */
+
+.crear-cuenta > a {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 13px 25px;
+
+    background-color: #c45d78;
+
+    color: #ffffff;
+
+    border-radius: 25px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 0.8px;
+
+    text-transform: uppercase;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.crear-cuenta > a:hover {
+    background-color: #a94762;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   18. FOOTER
+========================================================= */
+
+.footer-container {
+    padding: 60px 5% 25px;
+
+    background-color: #542f3b;
+
+    color: #ffffff;
+}
+
+.footer-content {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 50px;
+}
+
+.footer-column h3 {
+    margin-bottom: 20px;
+
+    font-size: 17px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #f9dfe6;
+
+    font-size: 14px;
+
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   19. FOOTER INFERIOR
+========================================================= */
+
+.footer-bottom {
+    max-width: 1200px;
+
+    margin: 40px auto 0;
+
+    padding-top: 25px;
+
+    border-top: 1px solid rgba(255,255,255,0.2);
+
+    text-align: center;
+
+    color: #f9dfe6;
+
+    font-size: 13px;
+}
+
+.footer-bottom p {
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+/* =========================================================
+   20. TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    header {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    header nav {
+        order: 3;
+
+        width: 100%;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+
+        max-width: 750px;
+    }
+
+}
+
+
+/* =========================================================
+   21. CELULAR
+========================================================= */
+
+@media (max-width: 650px) {
+
+    header {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 20px;
+    }
+
+    header nav {
+        order: initial;
+
+        width: 100%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .buscador {
+        width: 100%;
+
+        max-width: 300px;
+    }
+
+    main {
+        margin: 35px auto;
+
+        padding: 0 15px;
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+    .cuenta,
+    .crear-cuenta {
+        padding: 28px 22px;
+    }
+
+    .cuenta h2,
+    .crear-cuenta h2 {
+        font-size: 23px;
+    }
+
+    .cuenta button,
+    .crear-cuenta > a {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        gap: 35px;
+    }
+
+}
