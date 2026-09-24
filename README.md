@@ -5,7 +5,7 @@ Sitio de e-commerce de lencería, pijamas, fragancias y accesorios,
 maquetado con Bootstrap 5 y CSS propio, adaptado a mobile y desktop.
 
 ## Sitio desplegado
-(acá va el link)
+https://sharongonzalezj-lgtm.github.io/Entrega5-sharongonzalez/
 
 ## Tecnologías
 - HTML5
