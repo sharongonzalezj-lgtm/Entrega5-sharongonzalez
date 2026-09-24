@@ -1275,27 +1275,10 @@ main>section>p {
 
 
 .productos-lista {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "item1"
-        "item2"
-        "item3"
-        "item4"
-        "item5"
-        "item6";
-    gap: 20px;
     margin-top: 30px;
 }
 
-.productos-lista .producto:nth-child(1) { grid-area: item1; }
-.productos-lista .producto:nth-child(2) { grid-area: item2; }
-.productos-lista .producto:nth-child(3) { grid-area: item3; }
-.productos-lista .producto:nth-child(4) { grid-area: item4; }
-.productos-lista .producto:nth-child(5) { grid-area: item5; }
-.productos-lista .producto:nth-child(6) { grid-area: item6; }
-
-.productos-lista .producto {
+.productos-lista .card.producto {
     padding: 25px 20px;
     background-color: #ffffff;
     border: 1px solid #f1d8e1;
@@ -1305,21 +1288,53 @@ main>section>p {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.productos-lista .producto:hover {
+.productos-lista .card.producto:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(130, 60, 80, 0.12);
 }
 
-.productos-lista .producto h3 {
+.productos-lista .card.producto .card-title {
     margin-bottom: 10px;
     color: #c45d78;
     font-size: 17px;
     font-weight: 700;
 }
 
-.productos-lista .producto p {
+.productos-lista .card.producto .card-text {
+    margin-bottom: 0;
     color: #856a73;
     font-size: 14px;
+}
+
+.galeria-card {
+    background-color: #ffffff;
+    border: 1px solid #f1d8e1;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.galeria-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(130, 60, 80, 0.12);
+}
+
+.galeria-card .card-img-top {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.galeria-card .card-body {
+    padding: 20px;
+}
+
+.galeria-card .card-title {
+    margin: 0;
+    color: #633f4a;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 
@@ -1552,14 +1567,6 @@ main>section>p {
 
     .footer-column {
         flex: 1 1 calc(33.333% - 50px);
-    }
-
-    .productos-lista {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas:
-            "item1 item2 item3"
-            "item4 item5 item6";
-        gap: 30px;
     }
 
 }
