@@ -1,0 +1,81 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+// ==========================================================================
+// Navegación (nav dentro de header + overrides de la navbar de Bootstrap)
+// ==========================================================================
+
+header nav {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        @include desktop {
+            flex-direction: row;
+            gap: 28px;
+        }
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        color: $color-text-muted;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 0.7px;
+        text-transform: uppercase;
+        white-space: nowrap;
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}
+
+// Overrides de los componentes de Bootstrap para respetar la identidad visual
+.navbar {
+    padding: 15px 4%;
+}
+
+.navbar-toggler {
+    border: 1px solid $color-border-pink;
+
+    &:focus {
+        box-shadow: 0 0 0 0.2rem rgba($color-primary, 0.35);
+    }
+}
+
+// El color del ícono va codificado en la URL del SVG (no admite variable directamente)
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23c45d78' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-nav .nav-link {
+    color: $color-text-muted;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color-primary;
+    }
+}

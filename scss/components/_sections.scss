@@ -1,0 +1,100 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+// ==========================================================================
+// Secciones generales (intro, categorías, productos, newsletter)
+// ==========================================================================
+
+.intro {
+    width: 100%;
+    max-width: $container-max;
+    margin: 30px auto 30px;
+    padding: 0 15px;
+    text-align: center;
+
+    h1 {
+        color: $color-primary;
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    @include desktop {
+        margin-top: 40px;
+        padding: 0 25px;
+
+        h1 {
+            font-size: 34px;
+        }
+    }
+}
+
+.categorias {
+    width: 100%;
+    max-width: $container-max;
+    margin: 0 auto 50px;
+    padding: 0 15px;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 25px;
+        color: $color-primary;
+        font-size: 26px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    @include desktop {
+        padding: 0 25px;
+    }
+}
+
+.productos {
+    width: 100%;
+    max-width: $container-max;
+    margin: 0 auto 50px;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    > h1,
+    > h2 {
+        flex-basis: 100%;
+        color: $color-primary;
+        font-size: 28px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    @include desktop {
+        margin-bottom: 70px;
+        padding: 0 25px;
+    }
+}
+
+.newsletter-section {
+    max-width: none;
+    margin: 0;
+    padding: 50px 20px;
+    background-color: $color-bg-pink-light;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 15px;
+        color: $color-primary;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    p {
+        max-width: 650px;
+        margin: 0 auto 25px;
+        color: $color-text-secondary;
+    }
+
+    @include desktop {
+        padding: 70px 25px;
+    }
+}

@@ -1,0 +1,20 @@
+// ==========================================================================
+// main.scss — único punto de entrada de la compilación
+// ==========================================================================
+
+@use "utilities/variables" as *;
+@use "utilities/mixins" as *;
+
+@use "base/base";
+@use "base/tipografia";
+
+@use "layout/header";
+@use "layout/nav";
+@use "layout/footer";
+
+@use "components/buttons";
+@use "components/cards";
+@use "components/carousel";
+@use "components/forms";
+@use "components/banners";
+@use "components/sections";

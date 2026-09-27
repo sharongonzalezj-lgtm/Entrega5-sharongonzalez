@@ -1,0 +1,45 @@
+@use "../utilities/variables" as *;
+
+// ==========================================================================
+// Carousel (Bootstrap) — overrides con la paleta propia
+// ==========================================================================
+
+.carousel {
+    margin-top: 30px;
+    border-radius: $radius-card;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 380px;
+    object-fit: contain;
+    background-color: $color-bg-pink-light;
+}
+
+.carousel-caption p {
+    margin: 0;
+    padding: 8px 16px;
+    background-color: rgba($color-wine-dark, 0.65);
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: $color-primary;
+    border-radius: 50%;
+    padding: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    background-color: $color-primary-dark;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: $color-primary;
+}

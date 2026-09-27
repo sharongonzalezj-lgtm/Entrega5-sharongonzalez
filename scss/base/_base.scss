@@ -1,0 +1,49 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+// ==========================================================================
+// Base — reset y etiquetas globales
+// ==========================================================================
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font-primary;
+    background-color: $color-white;
+    color: $color-wine-dark;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+main {
+    width: 100%;
+}
+
+main > section {
+    width: 100%;
+    max-width: $container-max;
+    margin: 0 auto 50px;
+    padding: 0 15px;
+
+    @include desktop {
+        margin-bottom: 70px;
+        padding: 0 25px;
+    }
+}

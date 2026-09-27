@@ -1,0 +1,25 @@
+@use "../utilities/variables" as *;
+
+// ==========================================================================
+// Tipografía global de secciones
+// ==========================================================================
+
+main > section {
+    > h1,
+    > h2 {
+        margin-bottom: 12px;
+        color: $color-primary;
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    > p {
+        max-width: 700px;
+        margin: 0 auto 30px;
+        color: $color-text-secondary;
+        font-size: 15px;
+        text-align: center;
+    }
+}
