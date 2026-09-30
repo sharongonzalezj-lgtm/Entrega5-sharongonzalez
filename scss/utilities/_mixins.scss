@@ -82,5 +82,5 @@
 }
 
 @mixin fade-in($duracion: 0.6s, $delay: 0s) {
-  @include fade-in(0.8s, 0.2s);
+   animation: fadeInUp $duracion ease-out $delay both;
 }
