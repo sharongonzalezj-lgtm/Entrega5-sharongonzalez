@@ -1,10 +1,6 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 
-// ==========================================================================
-// Navegación (nav dentro de header + overrides de la navbar de Bootstrap)
-// ==========================================================================
-
 header nav {
     width: 100%;
     flex: 1;
@@ -47,7 +43,7 @@ header nav {
     }
 }
 
-// Overrides de los componentes de Bootstrap para respetar la identidad visual
+
 .navbar {
     padding: 15px 4%;
 }
@@ -60,7 +56,7 @@ header nav {
     }
 }
 
-// El color del ícono va codificado en la URL del SVG (no admite variable directamente)
+
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23c45d78' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }

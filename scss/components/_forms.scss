@@ -1,9 +1,6 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 
-// ==========================================================================
-// Formularios (contacto, cuenta, crear cuenta)
-// ==========================================================================
 
 .contacto-contenedor {
     width: 90%;
@@ -15,8 +12,12 @@
     justify-content: space-between;
     gap: 30px;
 
-    @include desktop {
+    @include tablet {
         flex-direction: row;
+        gap: 35px;
+    }
+
+    @include desktop {
         gap: 40px;
     }
 }
@@ -94,6 +95,11 @@
         width: 100%;
     }
 
+    @include tablet {
+        width: 58%;
+        padding: 30px;
+    }
+
     @include desktop {
         width: 60%;
         padding: 40px;
@@ -106,6 +112,11 @@
     padding: 25px 20px;
     box-shadow: 0 5px 20px rgba($color-shadow, 0.06);
     text-align: center;
+
+    @include tablet {
+        width: 42%;
+        padding: 30px;
+    }
 
     @include desktop {
         width: 40%;

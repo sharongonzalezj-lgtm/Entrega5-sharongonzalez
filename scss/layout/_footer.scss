@@ -1,9 +1,6 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 
-// ==========================================================================
-// Footer
-// ==========================================================================
 
 .footer-container {
     width: 100%;
@@ -29,6 +26,10 @@
 
 .footer-column {
     flex: 1 1 100%;
+
+    @include tablet {
+        flex: 1 1 calc(50% - 35px);
+    }
 
     h2,
     h3 {

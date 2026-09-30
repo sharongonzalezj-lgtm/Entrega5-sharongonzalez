@@ -1,9 +1,6 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 
-// ==========================================================================
-// Banners
-// ==========================================================================
 
 .banner {
     width: 100%;
@@ -48,6 +45,27 @@
     margin: 0 auto 50px;
     overflow: hidden;
     padding: 0;
+
+    .titulo-principal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        margin: 0;
+        color: $color-white;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 0 2px 10px rgba($color-wine-dark, 0.4);
+        animation: fadeInUp 0.9s ease both;
+
+        @include desktop {
+            font-size: 46px;
+        }
+    }
 
     img {
         width: 100%;
