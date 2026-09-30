@@ -36,7 +36,7 @@ Sitio web de la marca Velvet Beauty (lencería, pijamas, perfumería, accesorios
 - **utilities/**: variables (paleta rosa/vino, breakpoints, tipografías) y mixins, además de los placeholders usados con `@extend`.
 - **base/**: estilos globales, tipografía y animaciones (`@keyframes fadeInUp`).
 - **layout/**: estructura general de la página (header, navegación, footer).
-- **components/**: elementos reutilizables (botones, tarjetas, formularios, galerías).
+- **components/**: elementos reutilizables (banners, botones, tarjetas, carousel, formularios, secciones).
 
 `main.scss` importa todo con `@use`. Los estilos nuevos se agregan siempre dentro del partial que les corresponde.
 
