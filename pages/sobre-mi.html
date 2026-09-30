@@ -15,6 +15,7 @@
 
    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="../css/style.css">
 
@@ -143,16 +144,16 @@
 
             <div class="galeria">
 
-                <figure>
+                <figure data-aos="fade-up" data-aos-delay="0">
                     <figcaption>Calidad ante todo: seleccionamos materiales y fragancias que duran y se sienten bien.
                     </figcaption>
                 </figure>
 
-                <figure>
+                <figure data-aos="fade-up" data-aos-delay="100">
                     <figcaption>Atención personalizada: te acompañamos para que encuentres lo que buscás.</figcaption>
                 </figure>
 
-                <figure>
+                <figure data-aos="fade-up" data-aos-delay="200">
                     <figcaption>Diseño con identidad: cada colección tiene su propia impronta.</figcaption>
                 </figure>
 
@@ -203,6 +204,10 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 700, once: true });
+    </script>
 
 </body>
 
