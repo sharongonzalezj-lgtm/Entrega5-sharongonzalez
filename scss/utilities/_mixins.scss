@@ -1,24 +1,27 @@
 @use "variables" as *;
 
-// ==========================================================================
-// Mixins — Velvet Beauty
-// ==========================================================================
 
-// Breakpoint de escritorio
+@mixin tablet {
+    @media (min-width: $bp-tablet) {
+        @content;
+    }
+}
+
+
 @mixin desktop {
     @media (min-width: $bp-desktop) {
         @content;
     }
 }
 
-// Base compartida por las tarjetas (galería, producto, cards de Bootstrap)
+
 @mixin card-base {
     background-color: $color-white;
     border: 1px solid $color-border-card;
     border-radius: $radius-card;
 }
 
-// Botón "pill" compartido por los distintos botones del sitio
+
 @mixin button-pill($padding: 13px 20px, $font-size: 13px) {
     display: inline-block;
     padding: $padding;
@@ -37,7 +40,26 @@
     }
 }
 
-// Input de formulario compartido
+
+%hover-lift-soft {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba($color-shadow, 0.12);
+    }
+}
+
+%hover-lift-strong {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba($color-shadow, 0.12);
+    }
+}
+
+
 @mixin input-base {
     width: 100%;
     height: 45px;

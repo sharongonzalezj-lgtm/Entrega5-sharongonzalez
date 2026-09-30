@@ -1,50 +1,47 @@
-// ==========================================================================
-// Variables — Velvet Beauty
-// ==========================================================================
 
-// Colores principales
 $color-white: #ffffff;
 $color-wine-dark: #542f3b;
 $color-primary: #c45d78;
 $color-primary-dark: #a94762;
 
-// Colores de texto
+
 $color-text-muted: #633f4a;
 $color-text-secondary: #856a73;
 $color-text-dark2: #5a3044;
 $color-placeholder: #a98a94;
 $color-gray: #999999;
 
-// Bordes
+
 $color-border-light: #f0d9df;
 $color-border-card: #f1d8e1;
 $color-border-search: #e5c4cd;
 $color-border-pink: #d9a8bd;
 $color-border-input: #d9aebb;
 
-// Fondos
+
 $color-bg-hover-light: #fff0f4;
 $color-bg-offwhite: #fffafa;
 $color-bg-pink-light: #fff2f6;
 $color-bg-pink-pale: #f8dce8;
 $color-footer-link: #f9dfe6;
 
-// Base para sombras (equivalente a rgb(130, 60, 80))
+
 $color-shadow: #823c50;
 
-// Tipografía
+
 $font-primary: 'Poppins', sans-serif;
 
-// Radios de borde
+
 $radius-input: 6px;
 $radius-card: 10px;
 $radius-lg: 12px;
 $radius-pill: 25px;
 $radius-search: 20px;
 
-// Contenedores
+
 $container-max: 1200px;
 $container-narrow: 1000px;
 
-// Breakpoints
+
+$bp-tablet: 768px;
 $bp-desktop: 1024px;
