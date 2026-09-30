@@ -1,12 +1,10 @@
-// ==========================================================================
-// main.scss — único punto de entrada de la compilación
-// ==========================================================================
 
 @use "utilities/variables" as *;
 @use "utilities/mixins" as *;
 
 @use "base/base";
 @use "base/tipografia";
+@use "base/animaciones";
 
 @use "layout/header";
 @use "layout/nav";
