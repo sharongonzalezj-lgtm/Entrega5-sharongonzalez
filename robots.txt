@@ -1,0 +1,4 @@
+    User-agent: *
+Allow: /
+
+Sitemap: https://sharongonzalezj-lgtm.github.io/Entrega5-sharongonzalez/sitemap.xml
