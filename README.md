@@ -14,7 +14,7 @@ Sitio web de la marca Velvet Beauty (lencería, pijamas, perfumería, accesorios
 
 ## Estructura del proyecto
 
-```
+
 ├── index.html
 ├── pages/
 │   ├── sobre-mi.html
@@ -28,8 +28,8 @@ Sitio web de la marca Velvet Beauty (lencería, pijamas, perfumería, accesorios
     ├── utilities/       <- _variables.scss, _mixins.scss
     ├── base/            <- _tipografia.scss, _base.scss, _animaciones.scss
     ├── layout/          <- _header.scss, _nav.scss, _footer.scss
-    └── components/      <- _buttons.scss, _cards.scss, _forms.scss, ...
-```
+    └── components/      <- _buttons.scss, _cards.scss, _forms.scss
+
 
 ## Arquitectura SCSS
 
@@ -44,13 +44,13 @@ Sitio web de la marca Velvet Beauty (lencería, pijamas, perfumería, accesorios
 
 Requiere [Sass](https://sass-lang.com/install) instalado.
 
-```bash
-# Compilar una vez
+
+
 sass scss/main.scss css/style.css
 
-# Compilar automáticamente al guardar
+
 sass --watch scss/main.scss:css/style.css
-```
+
 
 El resultado es un único `css/style.css`, vinculado desde los 5 HTML.
 
@@ -68,6 +68,29 @@ Estrategia mobile-first:
 
 - **Nativa:** `@keyframes fadeInUp` en títulos, y `transition` en hover de tarjetas y galerías.
 - **Librería:** AOS en secciones de las 5 páginas.
+
+## SEO y accesibilidad
+
+En esta última etapa del proyecto trabajé el SEO y la accesibilidad en las 5 páginas:
+
+- **Títulos:** le puse a cada pagina un `<title>` propio y descriptivo, en vez de dejar nombres genéricos como "Contacto" o "Servicios".
+- **Meta tags:** agregué `meta description` y `meta keywords` en el `<head>` de cada HTML, escritas segun lo que realmente contiene esa pagina.
+- **Imágenes:** completé el `alt` de todas con una descripción de lo que se ve. La franja decorativa a rayas rosas la dejé con `alt` vacío, porque no aporta información y así los lectores de pantalla la saltean.
+- **Nombres de archivo:** renombré las imágenes con nombres descriptivos, en minúsculas y sin `ñ`, espacios ni caracteres especiales (por ejemplo `coleccion-tease-velvet-beauty.webp`).
+- **Estructura:** dejé un solo `<h1>` por pagina, con los títulos en orden (`h1`, `h2`, `h3`), y uso etiquetas semánticas como `header`, `main`, `section`, `figure` y `footer`.
+
+### Resultados en Lighthouse (móvil)
+
+Revisé cada página con Lighthouse en Chrome y estos fueron los puntajes:
+
+| Página | Accessibility | SEO |
+|---|---|---|
+| Inicio | 95 | 100 |
+| Sobre Velvet Beauty | 100 | 100 |
+| Colecciones y productos | 100 | 100 |
+| Servicios | 95 | 100 |
+| Contacto | 96 | 100 |
+
 
 ## Cómo visualizarlo
 
