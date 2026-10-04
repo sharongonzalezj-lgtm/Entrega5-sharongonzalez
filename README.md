@@ -24,9 +24,9 @@ Sitio web de la marca Velvet Beauty (lencería, pijamas, perfumería, accesorios
     │   ├── proyectos.html
     │   ├── servicios.html
     │   └── contacto.html
-    ├── image/               <- imágenes .webp con nombres descriptivos
-    ├── css/
-    │   └── style.css        <- generado al compilar, no se edita a mano
+    ├── assets/              <- imágenes .webp con nombres descriptivos
+    ├── styles/
+    │   └── main.css         <- generado al compilar, no se edita a mano
     └── scss/
         ├── main.scss        <- único punto de entrada (@use de todos los partials)
         ├── utilities/       <- _variables.scss, _mixins.scss
