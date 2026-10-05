@@ -2,7 +2,7 @@
 
 Sitio web de la marca Velvet Beauty (lencería, pijamas, perfumería, accesorios y bolsos). Proyecto final del curso de desarrollo web.
 
-🔗 **Sitio desplegado:** https://sharongonzalezj-lgtm.github.io/Entrega5-sharongonzalez/
+🔗 **Sitio desplegado:** https://fastidious-licorice-6ae374.netlify.app/
 
 📁 **Repositorio:** https://github.com/sharongonzalezj-lgtm/Entrega5-sharongonzalez
 
@@ -45,17 +45,17 @@ El archivo main.scss importa todo con @use. Los estilos nuevos se agregan siempr
 
 ## Compilación
 
-Requiere [Sass](https://sass-lang.com/install) instalado.
+Requiere [Sass](https://sass-lang.com/install) instalado, o la extensión Live Sass Compiler de VS Code, que ya viene configurada en `.vscode/settings.json` para guardar el CSS en `styles/`.
 
 Compilar una vez:
 
-    sass scss/main.scss css/style.css
+    sass scss/main.scss styles/main.css
 
 Compilar y quedar atento a los cambios:
 
-    sass --watch scss/main.scss:css/style.css
+    sass --watch scss/main.scss:styles/main.css
 
-El resultado es un único archivo css/style.css, vinculado desde los 5 HTML.
+El resultado es un único archivo styles/main.css, vinculado desde los 5 HTML.
 
 ## Responsive
 
@@ -80,7 +80,7 @@ En esta última etapa del proyecto me enfoqué en mejorar el SEO y la accesibili
 
 **Imágenes y accesibilidad.** Completé el alt de todas las imágenes con una descripción de lo que se ve. La franja decorativa de rayas rosas la dejé con alt vacío, porque no aporta información y así los lectores de pantalla la saltean. También renombré las imágenes con nombres descriptivos, en minúsculas y sin ñ, espacios ni caracteres especiales (por ejemplo coleccion-tease-velvet-beauty.webp). El contraste entre texto y fondo lo fui revisando con Lighthouse.
 
-**SEO técnico.** Declaré lang="es" en todas las páginas y agregué la etiqueta canonical y los metadatos de Open Graph (og:title, og:description, og:url y og:image) para que el link se vea bien al compartirlo. También sumé un robots.txt y un sitemap.xml en la raíz del proyecto, y el sitio está publicado en GitHub Pages.
+**SEO técnico.** Declaré lang="es" en todas las páginas y agregué la etiqueta canonical y los metadatos de Open Graph (og:title, og:description, og:url y og:image) para que el link se vea bien al compartirlo. También sumé un robots.txt y un sitemap.xml en la raíz del proyecto, y el sitio está publicado en Netlify.
 
 **SEO off-page y local.** Estas acciones son parte de la estrategia que pensé para la marca, pero no las apliqué porque dependen de que el negocio exista de verdad:
 

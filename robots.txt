@@ -1,4 +1,4 @@
     User-agent: *
 Allow: /
 
-Sitemap: https://sharongonzalezj-lgtm.github.io/Entrega5-sharongonzalez/sitemap.xml
+Sitemap: https://fastidious-licorice-6ae374.netlify.app/sitemap.xml
